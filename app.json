@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Gangbox Field",
+    "slug": "gangbox-field",
+    "owner": "djmprojectpro-jpg",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "gangbox",
+    "userInterfaceStyle": "light",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "backgroundColor": "#12110E"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "llc.gangbox.field",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Gangbox Field photographs the job for the shop file.",
+        "NSPhotoLibraryUsageDescription": "Gangbox Field attaches job photos you already shot."
+      }
+    },
+    "android": {
+      "package": "llc.gangbox.field",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#12110E"
+      },
+      "permissions": ["CAMERA"]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Gangbox Field photographs the job for the shop file."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {}
+    },
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}
